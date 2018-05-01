@@ -17,10 +17,4 @@ export class TodoListService {
   removeItem(item) {
     return this.storage.destroy(item);
   }
-
-
-  completeItem() {
-    return this.storage.post(item);
-  }
-
 }
