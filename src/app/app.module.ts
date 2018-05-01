@@ -3,16 +3,28 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
+import { InputComponent } from './input/input.component';
+import { ListManagerComponent } from './list-manager/list-manager.component';
+import { TodoListService } from './todo-list.service';
+import { TodoListStorageService } from './todo-list-storage.service';
+import { InputSubmitComponent } from './input-submit/input-submit.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputButtonUnitComponent,
+    TodoItemComponent,
+    InputComponent,
+    ListManagerComponent,
+    InputSubmitComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TodoListService, TodoListStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

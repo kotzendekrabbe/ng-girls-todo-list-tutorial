@@ -1,0 +1,15 @@
+<label
+  for="{{todoItem.title}}"
+  class="todo-label"
+  [ngClass]="{'todo-complete': isComplete}">
+  <input
+    type="checkbox"
+    (click)="completeItem()"
+    class="todo-checkbox"
+    id="{{todoItem.title}}"
+    >
+  <span class="todo-title">
+      {{ todoItem.title }}
+  </span>
+</label>
+<button class="btn" (click)="removeItem()">remove</button>

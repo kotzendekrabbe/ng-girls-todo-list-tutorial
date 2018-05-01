@@ -1,0 +1,11 @@
+<input
+  (keyup.enter)="changeTitle($event.target.value)"
+  placeholder="..."
+  #inputElement
+  class="input">
+
+  <button
+    (click)="changeTitle(inputElement.value)"
+    class="btn">
+      Save
+  </button>
